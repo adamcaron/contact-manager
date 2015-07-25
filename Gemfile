@@ -4,6 +4,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'awesome_print'
+  gem 'capybara'
 end
 
 gem 'unicorn'

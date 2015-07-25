@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'awesome_print'
 end
 
 gem 'unicorn'

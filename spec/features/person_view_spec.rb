@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "the person view", type: :feature do
   let(:person) { Person.create(first_name: "John", last_name: "Doe") }
 
-  describe "phone numbers", type: :feature do
+  context "phone numbers", type: :feature do
     before(:each) do
       person.phone_numbers.create(number: "555-1234")
       person.phone_numbers.create(number: "555-5678")
@@ -60,7 +60,7 @@ describe "the person view", type: :feature do
     end
   end
 
-  describe "email addresses", type: :feature do
+  context "email addresses", type: :feature do
     before(:each) do
       person.email_addresses.create(address: "jane@example.com", person_id: 1)
       person.email_addresses.create(address: "sam@example.com", person_id: 2)
